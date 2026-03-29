@@ -13,7 +13,6 @@ dataset/labels/**/*.txt
 runs/
 exports/
 results/
-*.pt
 *.pth
 *.onnx
 *.engine
