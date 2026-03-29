@@ -1,0 +1,5 @@
+# Module 2 — YOLO training (install after dataset prep)
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+PyYAML>=6.0

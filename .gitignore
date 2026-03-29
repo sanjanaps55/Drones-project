@@ -1,0 +1,39 @@
+# --- Local / large data (never push) ---
+# Raw VisDrone (or any mirror you extracted in the repo)
+data_raw/
+
+# Copied training set under dataset/ (regenerate with scripts/prepare_dataset.py)
+dataset/images/**/*.jpg
+dataset/images/**/*.jpeg
+dataset/images/**/*.png
+dataset/images/**/*.bmp
+dataset/labels/**/*.txt
+
+# --- Training & export outputs ---
+runs/
+exports/
+results/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mlmodel
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.log

@@ -1,0 +1,32 @@
+# VisDrone DET → YOLO mapping for aerial object detection (micro-UAV pipeline).
+#
+# VisDrone native categories (object_category in .txt annotations):
+#   0 ignored, 1 pedestrian, 2 people, 3 bicycle, 4 car, 5 van, 6 truck,
+#   7 tricycle, 8 awning-tricycle, 9 bus, 10 motor, 11 others
+#
+# Ground-truth lines use: score=1 (use) or 0 (ignore this box).
+
+# Output YOLO class order (class_id in label files = row index).
+names:
+  - person
+  - bicycle
+  - car
+  - truck
+  - bus
+  - motor
+  - tricycle
+
+# VisDrone category id → YOLO class index, or null to drop.
+visdrone_to_yolo:
+  0: null
+  1: 0   # pedestrian → person
+  2: 0   # people → person
+  3: 1
+  4: 2
+  5: 2   # van → car
+  6: 3
+  7: 6
+  8: 6   # awning-tricycle → tricycle
+  9: 4
+  10: 5
+  11: null

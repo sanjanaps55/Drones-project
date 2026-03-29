@@ -1,0 +1,19 @@
+# Default training hyperparameters (override via CLI: scripts/train.py --epochs 50 ...)
+
+model: yolov8n.pt
+epochs: 100
+batch: 16
+imgsz: 640
+patience: 50
+workers: 8
+device: null  # null = auto (cuda if available, else cpu)
+
+# Ultralytics run directory (under project root)
+project: runs/detect
+name: visdrone_yolov8n
+
+# Dataset YAML (path relative to project --project-root, or absolute)
+data: dataset/data.yaml
+
+# Saved weights copy (best.pt from run → models/)
+weights_out: models/yolov8n_visdrone_best.pt
