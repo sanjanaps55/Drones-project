@@ -13,6 +13,9 @@ dataset/labels/**/*.txt
 runs/
 exports/
 results/
+dataset.zip
+*.mp4
+*.avi
 *.pth
 *.onnx
 *.engine
